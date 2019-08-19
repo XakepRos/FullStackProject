@@ -1,0 +1,45 @@
+<!-- <div class="page-header navbar navbar-fixed-top" style="z-index: 1000;">
+</div> -->
+<nav class="nav-bar">
+    <h2>Welcome To Admin Pannel</h2>
+   
+</nav>
+
+
+<!-- <div class="container-">
+  <div class="row no-gutters">
+    <div class="col-3 bg-success"> -->
+
+<div class="admin-panel clearfix ">
+  <div class="slidebar">
+    <div class="logo">
+      <a href=""></a>  
+         
+    </div>
+
+
+
+<!-- <div style="display:contents">                
+  <div *ngFor="let item of productList">                                                      
+    <h5>{{ item.productName }}</h5>
+    <p>{{ item.productDescription }}</p>
+    <a href="#" class="btn btn-primary">View Product</a>                                  
+  </div>       
+</div> -->
+
+
+
+    <ul>
+        <button _ngcontent-c0="" class="btn btn-outline-success my-2 my-sm-0" (click)="Logout()">Logout</button>
+        <i class="fas fa-caret-down"></i>
+      <li><a href="#dashboard">Dashboard</a>
+        <!-- <mat-icon class="rotating-icon mat-icon" role="img" svgicon="keyboard_arrow_right" aria-hidden="true"><svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg></mat-icon> -->
+      </li>
+      <li><a href="#users">Users</a></li>
+      <li><a [routerLink]="['/product']">Product</a></li>
+      <li><a href="#settings">Setting</a></li>
+    </ul>
+    
+  </div>
+  <!-- <div class="col-3 bg-success"> -->
+</div>

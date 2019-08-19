@@ -1,0 +1,24 @@
+<div> </div>
+<body class="card-body">
+<div class="row">              
+    <div class="col-md-10" style="display:contents">               
+            <div *ngFor="let item of productList| paginate: { itemsPerPage: 9, currentPage: p }">                             
+                    <div class="card" style="width: 18rem; margin-left: 85px;">       
+                            <img class="card-img-top" src="https://localhost:44325/{{ item.imageURL }}" alt="Card image cap">
+                            <div class="card-body">
+                              <!-- <h5 class="card-title">{{ item.productID }}</h5> -->
+                              <h5 class="card-title">{{ item.productName }}</h5>
+                              <p class="card-text">{{ item.productDescription }}</p>
+                              <a href="#" class="btn btn-primary">View Product</a>
+                            </div>                                 
+                    </div>
+            </div>           
+    </div>
+
+    <!-- <ngb-pagination [collectionSize]="70" [(page)]="page" [disabled]='isDisabled'></ngb-pagination> -->
+
+    <nav aria-label="Page navigation example"> 
+       <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </nav>
+</div>
+</body>

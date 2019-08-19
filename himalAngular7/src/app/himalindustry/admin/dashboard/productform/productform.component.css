@@ -1,0 +1,105 @@
+/* Make file inputs better match text inputs by forcing them to new lines. */
+.form-control-file,
+.form-control-range{
+  display: block;
+  width: 51%;
+}
+.custom-height{
+  height: 30px !important;
+}
+
+img {
+  vertical-align: text-top;
+  border-style: none;
+}
+
+select.form-control[multiple], select.form-control[size] {
+    height: 347px;
+}
+
+.submit{
+    padding-left: 20px;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #4e555b;
+    margin: 5px;   
+}
+
+.btn{
+    margin:5px;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2{
+    text-align: center;
+}
+
+tbody {
+    display: block;
+    max-height: 350px;
+    overflow-y: scroll;
+   
+  }
+  
+thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+   
+  }
+
+  /* th, td{
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+  } */
+
+  th{
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    
+  }
+
+  td{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    text-align: left;
+    
+  }
+
+/* .toast-container {
+    pointer-events: none;
+    position: fixed;
+    z-index: 999993;
+}
+.toast-top-right {
+    top: 18px;
+    right: 18px;
+}
+
+.description:invalid {
+  border: 2px dashed red;
+}
+
+.productName:valid {
+  border: 2px solid black;
+} */
